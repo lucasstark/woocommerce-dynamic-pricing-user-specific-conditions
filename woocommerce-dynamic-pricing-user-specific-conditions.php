@@ -94,7 +94,8 @@ class WC_Dynamic_Pricing_User_Specific_Conditions {
 			<div class="user-selector" style="margin-top:5px;<?php echo $div_style; ?>">
 				<label for="pricing_rules[<?php echo $name; ?>][conditions][<?php echo $condition_index; ?>][args][users]"><?php _e( 'Users:', 'woocommerce-dynamic-pricing' ); ?></label>
 				<input type="text" name="pricing_rules[<?php echo $name; ?>][conditions][<?php echo $condition_index; ?>][args][users]" value="<?php echo isset( $condition['args']['users'] ) ? esc_attr( $condition['args']['users'] ) : '' ?>"/>
-				<p class="description"><?php _e('Enter the users login name, seperate multiple users with a comma', 'woocommerce-dynamic-pricing') ?></p>
+				<br />
+				<p class="description" style="margin-left:150px;"><?php _e('Enter the users login name, seperate multiple users with a comma', 'woocommerce-dynamic-pricing') ?></p>
 			</div>
 			<?php
 		}
